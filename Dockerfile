@@ -24,7 +24,7 @@ RUN apk --no-cache add ca-certificates
 COPY --from=builder /app/app /app
 
 # Expone el puerto en el que la app correrá
-EXPOSE 8080
+EXPOSE 80
 
 # Comando para ejecutar la app
 CMD ["/app"]
